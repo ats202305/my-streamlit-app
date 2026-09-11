@@ -102,7 +102,6 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-st.markdown(f"**Your Hex Code:** `{guess_hex}`")
  
 st.divider()
  
