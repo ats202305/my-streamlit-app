@@ -47,7 +47,7 @@ def new_round():
     st.session_state.b = 128
  
  
-st.title("🎨 Color Match Game")
+st.title("Color Match Game")
 st.write(
     "Match the hex color below using the RGB sliders. "
     "Get as close as you can, then hit **Submit** to see your score!"
