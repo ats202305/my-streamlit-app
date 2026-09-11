@@ -128,7 +128,7 @@ if st.session_state.submitted and st.session_state.result is not None:
     elif score >= 50:
         st.warning(f"🙂 Not bad — {score}% close. Keep tweaking!")
     else:
-        st.error(f"😅 {score}% close. Give it another shot!")
+        st.error(f"😅 {score}% close. Give it another shot! (**Your Hex Code:** '{guess_hex}'")
  
 if st.session_state.best_score is not None:
     st.caption(f"Best score this session: {st.session_state.best_score}%")
