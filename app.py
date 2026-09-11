@@ -122,13 +122,13 @@ with col2:
 if st.session_state.submitted and st.session_state.result is not None:
     score = st.session_state.result
     if score >= 95:
-        st.success(f"🎉 Amazing! You matched {score}% of the color!  (**Your Hex Code:** '{guess_hex}'")
+        st.success(f"🎉 Amazing! You matched {score}% of the color!  (**Your Hex Code:** '{guess_hex}')")
     elif score >= 80:
-        st.info(f"👍 Nice job! You got {score}% close.  (**Your Hex Code:** '{guess_hex}'")
+        st.info(f"👍 Nice job! You got {score}% close.  (**Your Hex Code:** '{guess_hex}')")
     elif score >= 50:
-        st.warning(f"🙂 Not bad — {score}% close. Keep tweaking!  (**Your Hex Code:** '{guess_hex}'")
+        st.warning(f"🙂 Not bad — {score}% close. Keep tweaking!  (**Your Hex Code:** '{guess_hex}')")
     else:
-        st.error(f"😅 {score}% close. Give it another shot! (**Your Hex Code:** '{guess_hex}'")
+        st.error(f"😅 {score}% close. Give it another shot! (**Your Hex Code:** '{guess_hex}')")
  
 if st.session_state.best_score is not None:
     st.caption(f"Best score this session: {st.session_state.best_score}%")
